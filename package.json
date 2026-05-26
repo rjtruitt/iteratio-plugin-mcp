@@ -1,0 +1,46 @@
+{
+  "name": "iteratio-plugin-mcp",
+  "version": "1.0.0",
+  "description": "MCP (Model Context Protocol) server integration plugin for iteratio",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "test": "vitest run",
+    "lint": "eslint src --ext .ts",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "iteratio",
+    "iteratio-plugin",
+    "mcp",
+    "model-context-protocol",
+    "tools",
+    "integration"
+  ],
+  "author": "",
+  "license": "MIT",
+  "peerDependencies": {
+    "@modelcontextprotocol/sdk": ">=1.0.0",
+    "iteratio": ">=1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.41",
+    "@types/ws": "^8.18.1",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.0.0",
+    "jest": "^29.0.0",
+    "typescript": "^5.0.0",
+    "vitest": "^4.1.6"
+  },
+  "dependencies": {
+    "eventsource": "^2.0.0",
+    "ws": "^8.0.0"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ]
+}
